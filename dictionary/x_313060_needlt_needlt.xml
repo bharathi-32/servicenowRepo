@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="Needlt" max_length="40" name="x_313060_needlt_needlt" sizeclass="3" type="collection">
+    <element audit="true" extends="task" label="Needlt" max_length="40" name="x_313060_needlt_needlt" sizeclass="5" type="collection">
         <element label="New field1" max_length="40" name="new_field1" type="string"/>
         <element label="New field 2" max_length="40" name="new_field_2" type="integer"/>
         <element label="New Field 3" max_length="40" name="u_integer_3" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="None" max_length="40" name="u_none" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="facilities" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
@@ -15,7 +17,7 @@
                 <element inactive_on_update="false" label="Your Department Choice" sequence="3" value="your choice"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="1" default="facilties 1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="other" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
             <choice>
                 <element inactive="true" inactive_on_update="true" label="Human Resources" sequence="0" value="hr"/>
                 <element inactive_on_update="false" label="Human Resources 1" sequence="0" value="human resources 1"/>
@@ -29,6 +31,7 @@
                 <element inactive_on_update="false" label="Legal 2" sequence="5" value="legal 2"/>
                 <element inactive_on_update="false" label="Your Deparment Choice 1" sequence="6" value="your deparment choice 1"/>
                 <element inactive_on_update="false" label="Your Deparment Choice 2" sequence="7" value="your deparment choice 2"/>
+                <element inactive_on_update="false" label="Other" sequence="8" value="other"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
