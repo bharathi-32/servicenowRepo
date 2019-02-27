@@ -12,14 +12,14 @@
         <order/>
         <script><![CDATA[function onSubmit() {
    // Generate Alert To Thank The User For Submitting a record
-	var some = 'authorized';
-if(g_user.getFullName() === g_form.getValue('u_requested_for')){
-    alert("Thank you for submitting a Needlet Request") ;
-	alert(g_form.getValue('short_description'));
-}else{
-	g_form.addErrorMessage('You are not ' +some);
-	return false;
-}
+	//var some = 'authorized';
+//if(g_user.getFullName() === g_form.getValue('u_requested_for')){
+   // alert("Thank you for submitting a Needlet Request") ;
+	//alert(g_form.getValue('short_description'));
+//}else{
+	//g_form.addErrorMessage('You are not ' +some);
+	//return false;
+//}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -27,7 +27,7 @@ if(g_user.getFullName() === g_form.getValue('u_requested_for')){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>705ab81edb6323009371d450cf9619a5</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Needlt Set Requested For OnSubmit</sys_name>
         <sys_overrides/>
         <sys_package display_value="Needlt" source="x_313060_needlt">61033e2cdb2323009371d450cf961977</sys_package>
@@ -35,7 +35,7 @@ if(g_user.getFullName() === g_form.getValue('u_requested_for')){
         <sys_scope display_value="Needlt">61033e2cdb2323009371d450cf961977</sys_scope>
         <sys_update_name>sys_script_client_705ab81edb6323009371d450cf9619a5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-02-20 01:56:11</sys_updated_on>
+        <sys_updated_on>2019-02-25 21:30:55</sys_updated_on>
         <table>x_313060_needlt_needlt</table>
         <type>onSubmit</type>
         <ui_type>0</ui_type>
